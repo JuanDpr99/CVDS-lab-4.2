@@ -83,6 +83,7 @@ public class GameModel {
             gameScorePoints = gameScore.calculateScore(correctCount, incorrectCount);
         } else {
             correctCount += positions.size();
+            gameScorePoints = gameScore.calculateScore(correctCount, incorrectCount);// AddJ by JParroquiano
         }
         return positions;
 

@@ -16,11 +16,10 @@ public class HangmanDefaultFactoryMethod implements HangmanFactoryMethod {
     private HangmanPanel hangmanPanel;
 
     public HangmanDefaultFactoryMethod(
-            //@Qualifier("englishLanguage") Language language,
-            @Qualifier("spanishLanguage") Language language,
-            @Qualifier("englishDictionary") HangmanDictionary dictionary,
+            @Qualifier("frenchLanguage") Language language,
+            @Qualifier("frenchDictionary") HangmanDictionary dictionary,
             @Qualifier("hangmanStickmanPanel") HangmanPanel hangmanPanel,
-            @Qualifier("originalScore") GameScore gameScore
+            @Qualifier("bonusScore") GameScore gameScore
     ) {
         this.language = language;
         this.dictionary = dictionary;

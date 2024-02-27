@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 @Component("originalScore")
 public class OriginalScore implements GameScore{
 
-
-    //@Autowired
-    /*
-    Metodo que calcula el puntaje seg
-    @param _correctCount : cuenta letras correctas
-    @param _incorrectCount : cuenta letras incorrectas
+    /**
+     * Cálculo de puntaje iniciando en 100 puntos y penalizando con 10 puntos
+     * por cada letra incorrecta
+     * @param correctCount número de intentos correctos
+     * @param incorrectCount número de intentos incorrectos
+     * @return score Puntaje total
      */
     public int calculateScore(int correctCount, int incorrectCount)
     {
-        int score = 100 - 5 * incorrectCount;
+        int score = 100 - 10 * incorrectCount;
         if (score < 0) {
             return 0;
         }

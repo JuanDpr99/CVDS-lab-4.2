@@ -60,11 +60,13 @@ public class GUI {
     public GUI(
             @Qualifier("englishLanguage") Language language,
             @Qualifier("englishDictionary") HangmanDictionary dictionary,
-            @Qualifier("hangmanStickmanPanel") HangmanPanel hangmanPanel
+            @Qualifier("hangmanStickmanPanel") HangmanPanel hangmanPanel,
+            @Qualifier("originalScore") GameScore gameScore
     ) {
         this.language = language;
         this.dictionary = dictionary;
         this.hangmanPanel = hangmanPanel;
+        this.gameScore = gameScore;
     }*/
 
     // method: setup
@@ -108,7 +110,7 @@ public class GUI {
         );
         highScoreController = new HighScoreController(
                 new HighScorePanel(),
-                new HighScoreModel(language.getFunctionControllerNames()[1], SCORE_NUMBER, Color.BLACK, language),
+                new HighScoreModel(language.getFunctionControllerNames()[1], SCORE_NUMBER, Color.BLUE, language),
                 mainFrameController
         );
 
