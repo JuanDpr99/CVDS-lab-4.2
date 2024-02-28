@@ -130,6 +130,19 @@ public class BonusScore implements GameScore {
 }
 ```
 
+7. Para cada clase de equivalencia y condición de frontera, implemente una prueba utilizando JUnit.
+   ![image](https://github.com/JuanDpr99/CVDS-lab-4.2/assets/47181098/b0abb2f9-73f4-44a6-92f2-d0482863397e)
+   ![image](https://github.com/JuanDpr99/CVDS-lab-4.2/assets/47181098/15caf31e-1897-41f5-8390-df7c7e005b69)
+   ![image](https://github.com/JuanDpr99/CVDS-lab-4.2/assets/47181098/c3875423-b9cf-4733-b7f2-2269284a0607)
+
+   ![image](https://github.com/JuanDpr99/CVDS-lab-4.2/assets/47181098/c81fde6e-4e79-489e-a24a-a35ecddd6525)
+   ![image](https://github.com/JuanDpr99/CVDS-lab-4.2/assets/47181098/3889450e-1c60-4216-9232-952490672215)
+
+
+
+
+9. 
+
 
 ### Parte II
 
